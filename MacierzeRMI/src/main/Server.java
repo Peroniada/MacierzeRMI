@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import remote.Subserver;
- 
+//java -Djava.security.policy=java.policy main.Server 
 public class Server {
     static List<Subserver> servers = new ArrayList<>();
 

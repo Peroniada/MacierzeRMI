@@ -6,4 +6,6 @@ import java.rmi.RemoteException;
 public interface Calculable extends Remote	{
 
 	public int multiplyVectors(int[] vector1, int[] vector2 )throws RemoteException;
+	public int[] concatVectors(int[] vector1, int[] vector2 )throws RemoteException;
+	
 }
