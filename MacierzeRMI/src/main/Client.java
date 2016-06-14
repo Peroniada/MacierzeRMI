@@ -81,7 +81,7 @@ public class Client {
 	
 	public int[][] concat(int[][] mat1, int[][] mat2) {
 		int[][] newMatrix = new int[mat1.length][mat1[0].length];
-		for(int i=0; i<newMatrix.length-3; i++) {
+		for(int i=0; i<newMatrix.length-3; i+=4) {
 			try {
 				newMatrix[i] = netConn[0].concatVectors(mat1[i], mat2[i]);
 				newMatrix[i+1] = netConn[1].concatVectors(mat1[i+1], mat2[i+1]);
